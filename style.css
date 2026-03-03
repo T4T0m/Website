@@ -36,6 +36,15 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+}
+
 .blue-punct {
   color: #4FEBFE;
 }
@@ -72,4 +81,55 @@ p {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   text-decoration: none;
+}
+
+.contact-container{
+  max-width: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-form{
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form .form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label{
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4FEBFE;
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+}
+
+.contact-form input, .contact-form textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea{
+  height: 125px;
+}
+
+.contact-form button{
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+  background-color: #0056b3;
 }
