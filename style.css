@@ -1,8 +1,10 @@
+/*==================MAIN==================*/
 body {
   background: #00091B;
   color: #fff;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 @keyframes fadeIn {
   from {top: 20%; opacity: 0;}
@@ -83,18 +85,23 @@ p {
   text-decoration: none;
 }
 
-.contact-form{
+
+
+
+
+/*==================CONTACT-US==================*/
+.contact-form {
   max-width: 850px;
   display: grid;
   gap: 20px;
 }
 
-.contact-form .form-group{
+.contact-form .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.contact-form label{
+.contact-form label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #4FEBFE;
@@ -102,7 +109,7 @@ p {
   font-weight: normal;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -111,11 +118,11 @@ p {
   font-weight: normal;
 }
 
-.contact-form textarea{
+.contact-form textarea {
   height: 125px;
 }
 
-.contact-form button{
+.contact-form button {
   padding: 15px;
   font-size: 18px;
   color: #fff;
@@ -128,4 +135,108 @@ p {
 
 .contact-form button:hover{
   background-color: #0056b3;
+}
+
+
+
+
+
+/*==================UPDATED==================*/
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0,136,169,0.8);
+}
+
+/*==================HAMBURGER==================*/
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/*==================RESPONSIVE NAV==================*/
+@media screen and (max-width: 875px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: #36454F;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-links li {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .cta {
+    display: none; /* optional: hide button on mobile */
+  }
 }
