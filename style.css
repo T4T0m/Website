@@ -65,14 +65,13 @@ p {
 }
 
 .icons i {
-  color: #00091B;
-  background: #0088a9;
+  color: #fff;
+  background: #000;
+  scale: 175%;
   height: 15px;
   width: 15px;
   padding: 13px;
   margin: 0 10px;
-  border-radius: 50px;
-  border: 2px solid #fff;
   transition: all 200ms ease;
   text-decoration: none;
   position: relative;
